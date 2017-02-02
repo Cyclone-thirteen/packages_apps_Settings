@@ -453,4 +453,6 @@ public class Settings extends SettingsActivity {
      * Cyclone Additions.
      */
     public static class CycloneSettingsActivity extends SettingsActivity {}
+    
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
