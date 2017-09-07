@@ -452,4 +452,8 @@ public class Settings extends SettingsActivity {
     // LiveDisplay
     public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 
+    /**
+     * Cyclone Additions.
+     */
+    public static class CycloneSettingsActivity extends SettingsActivity {}
 }

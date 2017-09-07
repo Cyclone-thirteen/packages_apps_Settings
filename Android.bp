@@ -53,10 +53,19 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: [
+           "src/**/*.java",
+           "src/**/*.kt",
+           "Cyclone/src/**/*.java",
+           "Cyclone/src/**/*.kt",
+    ],
+
+    aaptflags: ["--extra-packages com.cyclone.settings"],
+
     resource_dirs: [
         "res",
-        "TouchGestures/res"
+        "TouchGestures/res",
+        "Cyclone/res"
     ],
 
     static_libs: [
@@ -102,6 +111,10 @@ android_library {
         "telephony-common",
         "ims-common",
     ],
+
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {

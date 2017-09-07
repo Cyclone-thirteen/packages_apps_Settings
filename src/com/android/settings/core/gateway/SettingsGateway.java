@@ -182,6 +182,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.android.settings.livedisplay.LiveDisplaySettings;
 
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
+import com.cyclone.settings.CycloneSettings;
 
 public class SettingsGateway {
 
@@ -351,7 +352,9 @@ public class SettingsGateway {
             TurnScreenOnSettings.class.getName(),
             TurnScreenOnDetails.class.getName(),
             LiveDisplaySettings.class.getName(),
-            WifiTetherClientManager.class.getName()
+            WifiTetherClientManager.class.getName(),
+            // Cyclone Additions
+            CycloneSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -394,5 +397,7 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
+            // Cyclone Additions
+            Settings.CycloneSettingsActivity.class.getName(),
     };
 }
