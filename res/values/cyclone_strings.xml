@@ -32,5 +32,9 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
-    
+
+    <!-- Cyclone -->
+    <string name="cyclone_settings_title">Cyclone</string>
+    <string name="cyclone_settings_summary">Customization Hub</string>
+
 </resources>

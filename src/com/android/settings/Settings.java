@@ -448,4 +448,9 @@ public class Settings extends SettingsActivity {
      * Activity for OneHandedSettings
      */
     public static class OneHandedSettingsActivity extends SettingsActivity { /* empty */ }
+
+    /**
+     * Cyclone Additions.
+     */
+    public static class CycloneSettingsActivity extends SettingsActivity {}
 }
