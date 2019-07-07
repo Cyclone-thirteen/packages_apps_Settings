@@ -180,6 +180,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.cyclone.settings.CycloneSettings;
+import com.crdroid.settings.fragments.ui.SmartPixels;
 
 public class SettingsGateway {
 
@@ -351,6 +352,7 @@ public class SettingsGateway {
             // Cyclone Additions
             CycloneSettings.class.getName(),
             RunningServices.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -396,5 +398,6 @@ public class SettingsGateway {
             // Cyclone Additions
             Settings.CycloneSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
