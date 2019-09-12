@@ -42,6 +42,8 @@ public class CycloneVersionDetailPreferenceController extends BasePreferenceCont
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
     private static final String KEY_CYCLONE_VERSION_PROP = "org.cyclone_version";
+    private static final String KEY_CYCLONE_RELEASETYPE_PROP = "org.cyclone.build_type";
+    private static final String KEY_CYCLONE_FANBASE_PROP = "org.cyclone.fanbase_name";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
@@ -63,8 +65,10 @@ public class CycloneVersionDetailPreferenceController extends BasePreferenceCont
     @Override
     public CharSequence getSummary() {
 	String[] cycloneVer = SystemProperties.get(KEY_CYCLONE_VERSION_PROP).split("v");
-	if (!cycloneVer[1].isEmpty())
-	    return cycloneVer[1];
+	String cycloneReleasetype =  SystemProperties.get(KEY_CYCLONE_RELEASETYPE_PROP);
+	String cycloneFanbasetype =  SystemProperties.get(KEY_CYCLONE_FANBASE_PROP);
+	if (!cycloneVer[1].isEmpty() && !cycloneReleasetype.isEmpty() && !cycloneFanbasetype.isEmpty())
+	    return cycloneVer[1] + " | " + cycloneFanbasetype + " | " + cycloneReleasetype;
 	else
             return mContext.getString(R.string.unknown);
     }
