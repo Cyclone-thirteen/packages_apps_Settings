@@ -21,6 +21,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- Cyclone logo -->
+    <PreferenceScreen
+        android:layout="@layout/cyclone_logo"
+        android:key="cyclone_logo"
+        android:selectable="false" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
