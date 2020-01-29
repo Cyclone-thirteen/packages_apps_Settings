@@ -22,4 +22,8 @@
     <!-- Cyclone Device -->
     <string name="about_device_name">Device</string>
     
+    <!-- Cyclone maintainer -->
+    <string name="maintainer">Maintainer</string>
+    <string name="maintainer_name">Roxor-007</string>
+    
 </resources>
