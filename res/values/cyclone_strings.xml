@@ -37,4 +37,9 @@
     <string name="cyclone_settings_title">Cyclone</string>
     <string name="cyclone_settings_summary">Customization Hub</string>
 
+    <!-- Immersive Navigation -->
+    <string name="gesture_navbar_category_title">Navigation bar</string>
+    <string name="immersive_navigation_title">Immersive Navigation</string>
+    <string name="immersive_navigation_summary">Hide the gesture pill and navigation bar padding.</string>
+
 </resources>
