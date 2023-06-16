@@ -149,4 +149,9 @@
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Daily data usage in QS footer</string>
     <string name="qs_footer_datausage_summary">Display daily data usage summary in quick settings footer</string>
+
+    <!-- Smart 5G -->
+    <string name="smart_5g_title">Smart 5G</string>
+    <string name="smart_5g_summary">Automatically switch between 5G and 4G to reduce battery consumption</string>
+
 </resources>
