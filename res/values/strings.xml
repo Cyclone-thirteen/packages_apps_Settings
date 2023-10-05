@@ -6898,6 +6898,9 @@
     <!-- Graph subtext displayed to user when enhanced battery estimate is being used [CHAR LIMIT=120] -->
     <string name="advanced_battery_graph_subtext">Battery left estimate is based on your device usage</string>
 
+    <!-- Graph subtext displayed to user when enhanced battery estimate is being used [CHAR LIMIT=120] -->
+    <string name="advanced_battery_graph_subtext">Battery left estimate is based on your device usage</string>
+
     <!-- Description for battery time left, i.e. 50min Estimated time left. [CHAR LIMIT=80]-->
     <string name="estimated_time_left">Estimated time left</string>
 

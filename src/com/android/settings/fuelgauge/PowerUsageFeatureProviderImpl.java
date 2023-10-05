@@ -29,6 +29,8 @@ import com.android.settings.R;
 import com.android.settings.fuelgauge.batteryusage.BatteryHistEntry;
 import com.android.settingslib.fuelgauge.Estimate;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 

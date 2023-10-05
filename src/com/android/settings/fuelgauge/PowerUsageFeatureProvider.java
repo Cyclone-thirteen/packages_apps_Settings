@@ -24,6 +24,7 @@ import android.util.SparseIntArray;
 import com.android.settings.fuelgauge.batteryusage.BatteryHistEntry;
 import com.android.settingslib.fuelgauge.Estimate;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -145,7 +146,18 @@ public interface PowerUsageFeatureProvider {
     boolean isExtraDefend();
 
     /**
-     * Gets a intent for one time bypass charge limited to resume charging.
+     * Returns {@code true} if delay the hourly job when device is booting
+     */
+    boolean delayHourlyJobWhenBooting();
+
+    /**
+     * Gets an intent for one time bypass charge limited to resume charging.
+     * Returns battery history data with corresponding timestamp key.
+     */
+    Map<Long, Map<String, BatteryHistEntry>> getBatteryHistory(Context context);
+
+    /**
+     * Returns {@link Set} for hidding applications background usage time.
      */
     Intent getResumeChargeIntent(boolean isDockDefender);
 
